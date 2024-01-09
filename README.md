@@ -25,19 +25,15 @@ TuneTracker is a web application that allows users to manage and track their fav
     git clone https://github.com/your-username/TuneTracker.git
     ```
 
-2. Install the required dependencies:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
 
-3. Apply database migrations:
+2. Apply database migrations:
 
     ```bash
     python manage.py migrate
     ```
 
-4. Run the development server:
+3. Run the development server:
 
     ```bash
     python manage.py runserver
