@@ -43,33 +43,7 @@ TuneTracker is a web application that allows users to manage and track their fav
 
 3. Use the "Add New Song" and "Add New Artist" buttons to contribute to the database.
 
-## Contributing
-
  
-Contributions are welcome! If you'd like to contribute to TuneTracker, please follow these steps:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix:
-
-    ```bash
-    git checkout -b feature-name
-    ```
-
-3. Make your changes and commit them:
-
-    ```bash
-    git commit -m "Your detailed commit message"
-    ```
-
-4. Push your changes to your fork:
-
-    ```bash
-    git push origin feature-name
-    ```
-
-5. Open a pull request on the original repository.
-
 ## License
 @dhananjayyadav221303@gmail.com
 
