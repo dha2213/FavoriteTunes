@@ -43,6 +43,8 @@ TuneTracker is a web application that allows users to manage and track their fav
 
 3. Use the "Add New Song" and "Add New Artist" buttons to contribute to the database.
 
+4. Admin can login and manage Songs and Srtist.
+
  
 ## License
 @dhananjayyadav221303@gmail.com
