@@ -27,13 +27,8 @@ TuneTracker is a web application that allows users to manage and track their fav
 
 
 
-2. Apply database migrations:
 
-    ```bash
-    python manage.py migrate
-    ```
-
-3. Run the development server:
+2. Run the development server:
 
     ```bash
     python manage.py runserver
