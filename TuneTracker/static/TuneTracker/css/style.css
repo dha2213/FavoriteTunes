@@ -1,0 +1,93 @@
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* 
+for song list */
+
+#song-list {
+    margin-top: 20px;
+}
+
+#song-list h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+#song-list ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+#song-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#song-list a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+#song-list a:hover {
+    text-decoration: underline;
+}
+#song-list-container {
+    display: flex;
+    border: 1px solid #ccc;
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: auto; /* Center the container horizontally */
+    padding: 10px; /* Add some padding for better appearance */
+}
+
+#song-list {
+    flex: 1;
+    border-right: 1px solid #ccc; /* Add a border to the right side */
+    padding-right: 10px; /* Add some padding to the right for better appearance */
+}
+
+#sidebar {
+    width: 200px;
+    padding-left: 10px; /* Add some padding to the left for better appearance */
+}
+
+#sidebar h2,
+#song-list h2 {
+    border-bottom: 1px solid #ccc; /* Add a border below the heading for separation */
+    padding-bottom: 5px; /* Add some padding below the heading for better appearance */
+}
+

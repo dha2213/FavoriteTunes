@@ -1,0 +1,15 @@
+<!-- TuneTracker/templates/TuneTracker/base_generic.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'TuneTracker/css/styles.css' %}">
+    <title>{% block title %}My Favourite Tunes{% endblock %}</title>
+</head>
+<body>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

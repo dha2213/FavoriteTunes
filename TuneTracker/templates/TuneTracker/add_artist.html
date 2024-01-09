@@ -1,0 +1,15 @@
+<!-- TuneTracker/templates/TuneTracker/add_artist.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Artist</title>
+</head>
+<body>
+    <h2>Add a New Artist</h2>
+    <form method="post" action="{% url 'add_artist' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Artist</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favourite Tunes - Song Detail</title>
+</head>
+<body>
+    <h1>{{ song.title }}</h1>
+    <p>Artist: {{ song.artist.name }}</p>
+    <p><a href="{% url 'song_list' %}">Back to Song List</a></p>
+</body>
+</html>

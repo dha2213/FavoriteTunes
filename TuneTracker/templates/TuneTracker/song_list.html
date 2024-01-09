@@ -1,0 +1,83 @@
+<!-- TuneTracker/templates/TuneTracker/song_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favourite Tunes - Song List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'TuneTracker/css/style.css' %}">
+
+</head>
+<body> 
+    
+{% block content %}
+ 
+<h1>Song List</h1>
+
+<!-- Button to toggle song list visibility -->
+<!-- Your other HTML content -->
+{% comment %} 
+<!-- Button to toggle song list visibility -->
+<button id="toggleButton">Toggle Song List</button>
+
+<ul id="songList">
+    <!-- Your song list items go here -->
+    <li>Song 1</li>
+    <li>Song 2</li>
+    <!-- ... -->
+</ul>
+
+<!-- Include the correct script file -->
+<script src="{% static 'TuneTracker/js/script.js' %}"></script> {% endcomment %}
+
+
+
+<!-- Your other HTML content -->
+
+
+<!-- Song list with a hidden class -->
+{% comment %} <div id="song-list" class="hidden">
+    {% for song in songs %}
+        <p><a href="{% url 'song_detail' pk=song.pk %}">{{ song.title }} by {{ song.artist.name }}</a></p>
+    {% endfor %}
+</div> {% endcomment %}
+{% comment %} <div id="song-list" class="hidden">
+    {% for song in songs %}
+        <p><a href="{% url 'song_detail' pk=song.pk %}">Song {{ forloop.counter }}: {{ song.title }} by {{ song.artist.name }}</a></p>
+    {% endfor %}
+</div> {% endcomment %}
+
+<!-- Song list with a hidden class --><div id="song-list-container">
+    <div id="song-list" class="hidden">
+        <h2>Song List</h2>
+        <ol>
+            {% for song in songs %}
+                <li>
+                    <a href="{% url 'song_detail' pk=song.pk %}">
+                        <strong>Song {{ forloop.counter }}:</strong> {{ song.title }} by {{ song.artist.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div id="sidebar">
+        <!-- Display song count for each artist -->
+        <h2>Artists and Their Song Counts:</h2>
+        <ul>
+            {% for artist in artists %}
+                <li>{{ artist.name }} - {{ artist.song_count }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Buttons to add new song and artist -->
+        <button onclick="window.location.href='{% url 'add_song' %}'">Add New Song</button>
+        <button onclick="window.location.href='{% url 'add_artist' %}'">Add New Artist</button>
+    </div>
+</div>
+
+
+<script src="{% static 'TuneTracker/js/script.js' %}"></script>
+{% endblock %}
+</body>
+</html>
